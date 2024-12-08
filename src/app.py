@@ -7,11 +7,16 @@ app = Flask(__name__)
 @app.route("/")
 def main():
     return '''
-     <form action="/echo_user_input" method="POST">
-         <input name="user_input">
-         <input type="submit" value="Submit!">
-     </form>
-     '''
+    <main style = " text-align: center; ">
+        <h2> Chat With Private Data Using Gemini from Google </h2>
+        <h4> Developed by Alice Liang </h4>
+
+        <form action="/echo_user_input" method="POST">
+            <input name="user_input">
+            <input type="submit" value="Enter">
+        </form>
+    </main>
+    '''
 
 @app.route("/echo_user_input", methods=["POST"])
 def echo_input():
