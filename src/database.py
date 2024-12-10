@@ -4,7 +4,7 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 
 # Create a vector store (database) using FAISS
-def save_to_database(documents, databasename="faiss"):
+def save_to_database(documents, databasename = "faiss"):
     # Check if documents is None or empty
     if documents is None or len(documents) == 0:
         return
