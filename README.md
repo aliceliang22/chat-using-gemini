@@ -103,6 +103,20 @@ The most popular LLM is OpenAI. However, it is not free to use. Fortunately, Goo
 
 For LLM applications, the traditional SQL/NoSQL databases are not good candidates because SQL is good for structured data and NoSQL is good for key/value pair data. Large language models contain huge amounts of unstructured data and can not be represented using simple key/value pair structure. Vector database FAISS is designed for LLM applications. It is optimized for storing and querying vector embeddings. It also ensures fast searches for answering user questions.
 
-## To run
+## How to run:
 
-
+1. Setup virtual environment on windows:
+    - ***python -m venv venv***
+    - ***.\venv\Scripts\activate***
+2. Install
+    - ***pip install flask***
+    - ***pip install ***gunicorn***
+    - ***pip install langchain***
+    - ***pip install langchain_community***
+    - ***pip install pypdf***
+    - ***pip install docx2txt***
+    - ***pip install unstructured***
+    - ***pip install faiss-cpu***
+    - ***pip install pytest***
+    - ***pip install langchain-google-genai***
+    - ***pip freeze > requirements.txt***
