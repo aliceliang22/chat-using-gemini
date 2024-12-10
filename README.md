@@ -110,7 +110,7 @@ For LLM applications, the traditional SQL/NoSQL databases are not good candidate
     - ***.\venv\Scripts\activate***
 2. Install
     - ***pip install flask***
-    - ***pip install ***gunicorn***
+    - ***pip install gunicorn***
     - ***pip install langchain***
     - ***pip install langchain_community***
     - ***pip install pypdf***
