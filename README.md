@@ -11,3 +11,13 @@ The product I developed for this course is a web application that will try to so
 
 The following diagram shows the architecture and workflow of the application:
 ![picture of diagram](https://github.com/aliceliang22/chat-using-gemini/blob/main/src/static/images/diagram.jpg)
+
+#### This application includes the following components (see diagram):
+1. Front End (Web Page):
+    A form with two HTML inputs (types of File and Submit) for selecting users' private data (documents in .doc, .docx, .txt, .pdf, and .html formats) from local folders and for uploading users' private data to the database in the back end.
+    A form with two HTML inputs (types of Text and Submit) for entering questions related to the provided private data and for submitting questions to the back end.
+    A text box for displaying the answers for questions related to the provided private data.
+2. Back End:
+    A data collector with 4 loaders (Word  loader, text loader, PDF loader and HTML loader) for loading user’s private data in different formats of files.
+    A vector database FAISS (Facebook AI Similarity Search) for storing user’s data in smaller segmented chunks as vector in Python Numpy array for quick scalable similarity search of the multimedia data.
+    A data analyzer for analyzing a user's question with chat history and finding the answer from the FAISS database using the large language model Gemini from Google.
