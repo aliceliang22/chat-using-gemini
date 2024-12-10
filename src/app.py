@@ -53,6 +53,8 @@ def upload():
 
         message += "<br>File" + is_are + " also saved to the database."
 
+    message += "<br>Please click the left arrow at the top-left corner of your browser to go back and continue to chat. <br> Status: 200 OK"
+
     return message
 
 if __name__ == '__main__':
