@@ -10,4 +10,4 @@ The product I developed for this course is a web application that will try to so
 ### Project Architecture
 
 The following diagram shows the architecture and workflow of the application:
-!(https://github.com/aliceliang22/chat-using-gemini/blob/main/src/static/images/diagram.jpg)
+![picture of diagram](https://github.com/aliceliang22/chat-using-gemini/blob/main/src/static/images/diagram.jpg)
