@@ -11,7 +11,14 @@ def main():
 @app.route('/upload', methods=['POST'])
 def upload():
     files = request.files.getlist("documents")
-    return "Documents Uploaded Successfully. <br> Status: 200 OK"
+    filenames = []
+    for file in files:
+        if file != None and file.filename != '':
+            filenames.append(file.filename)
+
+    message = "The following documents are successfully uploaded: " + ", ".join(filenames) + ". <br> Status: 200 OK"
+
+    return message
 
 if __name__ == '__main__':
 	    app.run(debug=True)
