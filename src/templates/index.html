@@ -3,6 +3,9 @@
         <title> Chat with Private Data Using Gemini from Google </title>
         <style>
             .center { text-align: center; }
+            .inputbox { width: calc(100% - 80px); border: 2px solid #000; border-radius: 3px; font-size: large; }
+            .inputdiv { padding: 10px; }
+            .btn-primary { background-color: rgb(0, 159, 255); color: white; margin-left: 3px; border-radius: 3px; font-size: large; font-family:'Courier New', Courier, monospace; }
         </style>
     </head>
     <body>
@@ -13,7 +16,7 @@
                 <input type = "file" id = 'documents' name = "documents" multiple />
                 <input type = "submit" value = "Upload">
             </form>
-            <div>
+            <div class = "inputdiv">
                 <input id = "chat-input" type = "text" class = "inputbox" placeholder = "Type your question here" />
                 <button id = "chat-button" class = "btn btn-primary">Chat</button>
             </div>
