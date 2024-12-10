@@ -3,7 +3,7 @@
 ### By Alice Liang
 ## Link to [app](https://chat-using-gemini-9141a48a06cb.herokuapp.com/)
 
-### **Project Description**
+### Project Description
 
 The product I developed for this course is a web application that will try to solve the problem of interacting with private & business specific data using a large language model (LLM). Existing LLMs like ChatGPT are not trained with any private company data. This limits the knowledge necessary to address questions regarding customer support, operations, company operations, employee benefits, etc. This project is geared towards businesses, specifically customer service, HR departments, and employees who need accurate and fast access to private company information. What is unique about this product is its ability to integrate a LLM with private data. Users will be able to upload documents in formats such as .doc, .docx, .txt, .pdf, and .html, and ask questions based on the contents of those documents. This system is built using a combination of a vector database FAISS, LangChain framework, and a front-end interface to process the data and give answers based on user input.
 
@@ -36,3 +36,20 @@ The following diagram shows the architecture and workflow of the application:
 3. Communication among Front End, Data Analyzer and Vector Database FAISS
 
     A REST endpoint ‘/’ with POST method and main() function in app.py is used for accepting Http requests for user’s questions from the front end web page using JavaScript AJAX (Asynchronous JavaScript and XML) API. Then, the main() function passes the question with chat history to the chat() function in dataanalyzer.py, which then use LangChain’s conservation retrieve chain with Google’s Gemini model to find answer from FAISS database (based on similarity) and returns the answer to the end point ‘/’ function main(). Consequently, the function main() sends the answer as HTTPresponse back to the AJAX function. AJAX function then generates HTML tags for displaying the answer to the front end web page.
+
+### System/Software Requirements
+
+The web application developed in this course project uses/requires the following languages, technologies, and software packages:
+
+1. HTML (forms, actions, css,  etc.) 
+2. JavaScript (AJAX, JQuery)
+3. Python Libraries/Packages
+    - *flask* for **web framework Flask**
+    - *langchain-google-genai* for **LLM Gemini** from Google
+    - *langchain* for **building applications with LLMs**
+    - *docx2txt* for loading Microsoft’s Word documents
+    - *pypdf* for loading PDF documents
+    - *unstructured* for loading HTML documents
+    - *faiss-cpu*  for **Vector Database FAISS**
+4. Web Host by Heroku (https://chat-using-gemini-9141a48a06cb.herokuapp.com/)    
+
