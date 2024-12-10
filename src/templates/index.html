@@ -10,6 +10,7 @@
             .qnabox { text-align: left; padding: 5px; }
             .questiontext { font-size: large; font-weight: bolder; }
             .center, input, script, font, div { font-family:'Courier New', Courier, monospace; }
+            .timediv {background-color: rgb(51, 255, 0);}
         </style>
     </head>
     <body>
@@ -20,6 +21,7 @@
                 <input type = "file" id = 'documents' name = "documents" multiple />
                 <input type = "submit" value = "Upload">
             </form>
+            <div id = "time_div" class = "timediv"></div>
             <div class = "inputdiv">
                 <input id = "chat-input" type = "text" class = "inputbox" placeholder = "Type your question here" />
                 <button id = "chat-button" class = "btn btn-primary">Chat</button>
@@ -51,8 +53,10 @@
                                 ${ data.answer }
                             </div>
                         `;
+                        let time_data = `Average response time: ${ data.averagetimes } second(s)`;
                         $("#answers").prepend(answer_data);
                         $("#answers").prepend(question_data);
+                        $("#time_div").html(time_data)
                     }
                 });
             });
