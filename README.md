@@ -64,6 +64,7 @@ The web application developed in this course project uses/requires the following
     - LangChain API with LLM Gemini from Google and FAISS database from Facebook is used to analyze user’s questions with chat history.
 - Unit tests 
     -Three unit tests for testing the endpoint ‘/’ with both “GET’ and ‘POST’ methods and endpoint‘/upload’ with both ‘POST’ method are implemented. Change directory in command line to ‘src’ and run the following command for unit test:
+
     ***pytest unit_test.py***
 - Data persistence any data store 
     - Vector Database (FAISS) is used to store user’s private data as smaller chunks (or tokens) in the form of matrix for similarities.
@@ -76,10 +77,12 @@ The web application developed in this course project uses/requires the following
     - Hosted on Heroku https://chat-using-gemini-9141a48a06cb.herokuapp.com/
 - Integration tests
     - An integration test is created for testing file uploading, database storage and chatting workflow. Change directory to ‘src’ and run the following command for integrationtest: 
-    *** pytest integration_test.py ***
+
+    ***pytest integration_test.py***
 - Using mock objects or any test doubles
     - A mocked .txt file is created and used for testing the load_files() function. Change directory to ‘src’ and run the following command for mock test: 
-    *** pytest mock_test.py*** 
+    
+    ***pytest mock_test.py*** 
 - Continuous integration
     - via GitHub repository https://github.com/aliceliang22/chat-using-gemini/tree/main
 - Production monitoring instrumenting 
