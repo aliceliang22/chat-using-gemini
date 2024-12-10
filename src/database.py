@@ -9,6 +9,15 @@ def save_to_database(documents, databasename="faiss"):
     if documents is None or len(documents) == 0:
         return
 
+    # Append all documents to form a large text string.
+    text = " "
+    for document in documents:
+        text += document.page_content
+
+    # Remove all problematic characters.
+    text= text.replace('»', '').replace('\'','').replace('/','').replace(':','-').replace('(','').replace(')','').replace("*",'')
+    text= text.encode('ascii', errors='ignore').decode()
+
     # Use RecursiveCharacterTextSplitter splits the large text into specified chunk size.
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=10000, chunk_overlap=1000)
     chunks = text_splitter.split_text(text)
