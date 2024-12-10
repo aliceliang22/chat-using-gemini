@@ -2,7 +2,6 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
-
 # Create a vector store (database) using FAISS
 def save_to_database(documents, databasename = "faiss"):
     # Check if documents is None or empty
