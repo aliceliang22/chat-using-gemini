@@ -1,0 +1,30 @@
+OpenAI’s success has put a huge target on its back
+
+Daniel Howley
+·Technology Editor
+Updated Wed, March 6, 2024 at 1:12 PM CST
+OpenAI is the world’s hottest startup. It not only set the stage for the generative AI explosion thanks to the launch of its ChatGPT in November 2022, but it’s also powering Microsoft’s (MSFT) push into the space via a multiyear, multibillion-dollar investment that gives the tech giant a roughly 49% stake in the company’s for-profit subsidiary.
+The company is now valued as high as $86 billion, according to Bloomberg. And with its latest product, the generative AI video platform Sora, making waves, CEO Sam Altman and company are riding higher than ever.
+But OpenAI’s success has also put a massive target on its back. The company is facing a slew of headwinds ranging from lawsuits and government investigations to increasing competition from established players like Google. And some of those could pose an existential threat to OpenAI as it’s currently constituted.
+Lawsuits on lawsuits
+OpenAI’s latest trouble comes from a familiar place: co-founder Elon Musk. Last week, the Tesla CEO filed a lawsuit against the generative AI company claiming it is in breach of contract. Musk claims in the suit that OpenAI is in violation of its founding agreement by using its technology to grow its for-profit arm rather than for the benefit of humanity.
+Musk wants OpenAI to make all of its technologies public and to prevent it from making any money for Microsoft, which uses OpenAI’s models for its various AI Copilot offerings. After helping to found OpenAI in 2015, Musk left the company in 2018 over disagreements about the company’s future and, last year, founded an AI company of his own called x.AI.
+ 
+OpenAI CEO Sam Altman participates in the "Technology in a turbulent world" panel discussion during the annual meeting of the World Economic Forum in Davos, Switzerland, on Jan. 18, 2024. (Markus Schreiber/AP Photo, File) (ASSOCIATED PRESS)
+The New York Times is also suing OpenAI as well as Microsoft, claiming that the companies are benefiting from the use of the Times’ copyrighted material. The Times says OpenAI used its content without permission to train its models, which are now benefiting both the company and Microsoft. The Times wants OpenAI to destroy any content that was trained using its materials.
+The paper isn’t the only media company looking to take on OpenAI. The Intercept, Raw Story, and AlterNet are also suing the firm, saying it used their data to train its models. The organizations are seeking damages and calling on OpenAI to delete any training data “from which author, title, copyright, and terms of use information was removed.”
+Removing training data from OpenAI’s large language models could impact their overall performance.
+Regulators are circling
+OpenAI is also facing regulatory scrutiny in the US and abroad. According to the Wall Street Journal, the Securities and Exchange Commission is in the midst of a probe into whether or not OpenAI misled investors. The inquiry followed the OpenAI board’s decision to fire Altman in November, saying he hadn’t been consistently candid with its members. OpenAI rehired Altman less than two weeks after he was removed.
+The Federal Trade Commission is also looking into OpenAI and its dealings with Microsoft, as well as those of its rivals, as the entity examines the potential impact of major cloud providers investing heavily in generative AI companies. The FTC is looking at Amazon and Google’s investments in OpenAI competitor Anthropic.
+Overseas, the UK’s Competition and Markets Authority is seeking comments from the public with regards to whether OpenAI and Microsoft’s deal should be considered a relevant merger situation and what kind of impact that will have on competition in the market.
+The European Commission, meanwhile, is looking into whether Microsoft and OpenAI’s relationship is reviewable under the EU’s Merger Regulation.
+Competition is growing
+OpenAI is also staring down increasing competition from some of its biggest rivals. On Monday, Anthropic announced its Claude 3 family of large language models. According to the company, its largest model, Claude 3 Opus, can take on OpenAI’s GPT-4.
+ 
+Subscribe to the Yahoo Finance Tech newsletter. (Yahoo Finance)
+Google (GOOG, GOOGL) is also aiming to take on OpenAI with its Gemini family of models. But the company flubbed the rollout of its Gemini image generator and pulled it off the market pending an update.
+Apple (AAPL) is also looking to get into the generative AI market, with Tim Cook saying that the company is investing heavily in the technology. And while Apple is unlikely to launch an enterprise generative AI model to directly rival OpenAI’s GPT offerings, it could reveal on-device generative AI capabilities that will draw consumers’ attention away from ChatGPT and its ilk.
+But OpenAI’s challenges aren’t necessarily a sign that the company is in any immediate danger. Lawsuits and regulatory actions can take years to wind their way through the courts if they even get that far. And with Microsoft in its corner, the company has an enormous war chest to pull from to fund its research into larger, more powerful AI models. But with the company sitting at the top of the AI mountain at the moment, it’s sure to face more challenges in the future.
+Daniel Howley is the tech editor at Yahoo Finance. He's been covering the tech industry since 2011. You can follow him on Twitter @DanielHowley.
+
