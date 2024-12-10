@@ -30,15 +30,16 @@ def upload():
         if file != None and file.filename != '':
             filenames.append(file.filename)
 
-    message = "The following file(s) is/are successfully uploaded: " + ", ".join(filenames) + ". <br> Status: 200 OK"
+    count = len(files)
+    is_are = "s are" if (count > 1) else " is"
+    message = '<h3 style = "font-family:Courier New; text-align: center;"> The following file' + is_are + ' successfully uploaded: ' + ', '.join(filenames) + '.'
 
     # Save documents to vector database
     if documents and len(documents) > 0:
         # Create a vector store (database) using FAISS
         save_to_database(documents, "faiss")
 
-        message += "<br>File(s) is/are also saved to database."
-
+        message += "<br>File" + is_are + " also saved to the database."
 
     return message
 
