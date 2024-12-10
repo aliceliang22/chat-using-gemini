@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 from flask import Flask, request, render_template, jsonify
-from .datacollector import load_files
-from .database import save_to_database
-from .dataanalyzer import chat
+from datacollector import load_files
+from database import save_to_database
+from dataanalyzer import chat
 import datetime
 import os
 
