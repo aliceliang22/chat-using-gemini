@@ -81,7 +81,7 @@ The web application developed in this course project uses/requires the following
     ***pytest integration_test.py***
 - Using mock objects or any test doubles
     - A mocked .txt file is created and used for testing the load_files() function. Change directory to ‘src’ and run the following command for mock test: 
-    
+
     ***pytest mock_test.py*** 
 - Continuous integration
     - via GitHub repository https://github.com/aliceliang22/chat-using-gemini/tree/main
@@ -89,3 +89,17 @@ The web application developed in this course project uses/requires the following
     - The application performance is monitored using the average response time for all questions.
 - Continuous delivery
     - My GitHub and Heroku accounts are linked. Any code changes made in my GitHub repository can be re-built, tested, and deployed on Heroku.
+
+### Justifications for Design Decisions
+1. Web Framework Selection 
+
+There are many web frameworks, i.e. Angular, React, Vue, Asp.Net, etc. Selection of Flask is based on the simplicity of Flask and its full integration with all software packages written in Python for LLM applications.
+
+2. Large Language Model (LLM) Selection 
+
+The most popular LLM is OpenAI. However, it is not free to use. Fortunately, Google provides similar LLM Gemini for free. So, this application selects Gemini as the LLM.
+
+3. Database Selection
+
+For LLM applications, the traditional SQL/NoSQL databases are not good candidates because SQL is good for structured data and NoSQL is good for key/value pair data. Large language models contain huge amounts of unstructured data and can not be represented using simple key/value pair structure. Vector database FAISS is designed for LLM applications. It is optimized for storing and querying vector embeddings. It also ensures fast searches for answering user questions.
+
