@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 from flask import Flask, request, render_template
 from datacollector import load_files
 
@@ -25,4 +26,5 @@ def upload():
     return message
 
 if __name__ == '__main__':
-	    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
