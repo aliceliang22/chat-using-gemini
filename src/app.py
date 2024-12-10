@@ -4,8 +4,13 @@ from flask import Flask, request, render_template
 from .datacollector import load_files
 from .database import save_to_database
 from .dataanalyzer import chat
+import getpass
+import os
 
 app = Flask(__name__)
+
+if "GOOGLE_API_KEY" not in os.environ:
+    os.environ["GOOGLE_API_KEY"] = getpass("AIzaSyBLO1FX2OkTeShNK7Q6c2_nwu6FadObZn8")
 
 chat_history = []
 
