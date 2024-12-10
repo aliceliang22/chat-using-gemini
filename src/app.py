@@ -2,6 +2,7 @@
 
 from flask import Flask, request, render_template
 from .datacollector import load_files
+from .database import save_to_database
 
 app = Flask(__name__)
 
@@ -21,6 +22,14 @@ def upload():
             filenames.append(file.filename)
 
     message = "The following documents are successfully uploaded: " + ", ".join(filenames) + ". <br> Status: 200 OK"
+
+    # Save documents to vector database
+    if documents and len(documents) > 0:
+        # Create a vector store (database) using FAISS
+        save_to_database(documents, "faiss")
+
+        message += " Files are also saved to database."
+
 
     return message
 
