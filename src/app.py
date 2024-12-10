@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from flask import Flask, request, render_template
-from datacollector import load_files
+from .datacollector import load_files
 
 app = Flask(__name__)
 
